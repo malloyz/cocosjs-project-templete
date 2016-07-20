@@ -1,0 +1,27 @@
+{
+	"groups":[
+	{
+		"keys":"test_png,food_png,food_plist",
+		"name":"Main"
+	},
+	{
+		"keys":"food_plist",
+		"name":"Plist"
+	}],
+	"resources":[
+	{
+		"name":"test_png",
+		"type":"image",
+		"url":"ui/image/test.png"
+	},
+	{
+		"name":"food_png",
+		"type":"image",
+		"url":"ui/plist/food.png"
+	},
+	{
+		"name":"food_plist",
+		"type":"bin",
+		"url":"ui/plist/food.plist"
+	}]
+}
