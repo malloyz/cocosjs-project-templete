@@ -26,6 +26,7 @@
     "src/data/configObject/SurnameConfigObject.js",
     "src/data/DataCenter.js",
     "src/data/language/EnLanguage.js",
+    "src/data/language/LanguageKey.js",
     "src/data/language/ZhLanguage.js",
     "src/data/Language.js",
     "src/data/Loader.js",

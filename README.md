@@ -1,11 +1,12 @@
 # cocosjs 项目模板 #
 
-1. 集合project.json生成工具
-1. 集合配置文件生成工具
-1. 集合音乐音效文件生成工具
-1. 集合窗口生成工具
-1. 集合android打包脚本
-1. 集合web打包脚本
+1. 集合project.json生成工具（projectjson-generator.bat）
+1. 集合配置文件生成工具（config-generator.bat）
+1. 集合音乐音效文件生成工具（tools/musicConfig-generator/generator.js）
+2. 集合多语言生成工具(language-generator.bat)
+1. 集合窗口生成工具(tools/window-generator/generator.js)
+1. 集合android打包脚本(publish-android.bat)
+1. 集合web打包脚本(publish-web.bat)
 1. 集合窗口管理器及窗口相关代码
 1. 集合标签页代码
 1. 集合富文本代码

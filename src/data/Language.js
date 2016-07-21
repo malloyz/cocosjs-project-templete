@@ -1,5 +1,5 @@
 /**
- * Created by malloyzhu on 16/6/2.
+ * Created by malloy on 16/6/2.
  */
 
 var Language = {
@@ -10,4 +10,4 @@ var Language = {
             return EnLanguage[key];
         }
     }
-};
+}
