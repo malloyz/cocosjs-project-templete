@@ -27,6 +27,22 @@ exports.getFullDate = function () {
 };
 
 /**
+ * 获取时间
+ * @returns {string}
+ */
+exports.getFullTime = function () {
+    var dateObject = new Date();
+    var year = dateObject.getFullYear();
+    var month = dateObject.getMonth() + 1;
+    var date = dateObject.getDate();
+    var hour = dateObject.getHours();
+    var minute = dateObject.getMinutes();
+    var second = dateObject.getSeconds();
+    var fullDate = year + "/" + month + "/" + date + "/" + hour + "/" + minute + "/" + second;
+    return fullDate;
+};
+
+/**
  * 是否是磁盘路径
  * @param path
  * @returns {*}

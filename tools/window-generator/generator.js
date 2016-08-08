@@ -7,7 +7,7 @@ var codeGenerator = require('../util/CodeGenerator.js');
 var util = require('../util/Util.js');
 var path = require('path');
 
-function t() {
+function generatorFile() {
     var rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout
@@ -27,4 +27,7 @@ function t() {
         rl.close();
     });
 };
-t();
+
+if (module == require.main) {
+    generatorFile();
+};
