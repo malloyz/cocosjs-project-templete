@@ -68,14 +68,25 @@ function getSheetConfigData(sheetData) {
     for (var row = 3; row < sheetData.data.length; row++) {
         var rowData = {};
         var cols = sheetData.data[row];
-        for (var col = 0; col < cols.length; col++) {
-            var fieldName = sheetData.data[0][col];
-            var fieldValue = sheetData.data[row][col];
-            rowData[fieldName] = fieldValue;
+        if (cols.length != 0) {
+            for (var col = 0; col < cols.length; col++) {
+                var fieldName = sheetData.data[0][col];
+                var fieldValue = sheetData.data[row][col];
+                rowData[fieldName] = _getDefaultValue(fieldValue, sheetData.data[1][col]);
+            }
+            data.push(rowData);
         }
-        data.push(rowData);
     }
     return data;
+};
+
+function _getDefaultValue(fieldValue, fieldType) {
+    if (fieldType == "TEXT") {
+        return (undefined != fieldValue) ? fieldValue : "";
+    } else if (fieldType == "INTEGER") {
+        return (undefined != fieldValue) ? fieldValue : -1;
+    }
+    return fieldValue;
 };
 
 function writeConfigFile(sheetName, sheetData) {
