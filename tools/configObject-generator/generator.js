@@ -82,7 +82,7 @@ function getSheetConfigData(sheetData) {
 
 function _getDefaultValue(fieldValue, fieldType) {
     if (fieldType == "TEXT") {
-        return (undefined != fieldValue) ? fieldValue : "";
+        return (undefined != fieldValue) ? fieldValue.toString() : "";
     } else if (fieldType == "INTEGER") {
         return (undefined != fieldValue) ? fieldValue : -1;
     }
